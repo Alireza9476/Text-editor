@@ -50,11 +50,11 @@ public class Editor {
   JScrollPane sPne = new JScrollPane(edPane);
 
   content.add(sPne, BorderLayout.CENTER);
-  edPane.setEditorKit(null);		//Wir könnten das auf HTMLEditorKit stellen, aber bei Default speichert er es einfach wie in ein Texteditor
+  edPane.setEditorKit(null);		//Wir kÃ¶nnten das auf HTMLEditorKit stellen, aber bei Default speichert er es einfach wie in ein Texteditor
  
   JPanel jPanel = new JPanel();
  
- //Für ein Button erstellen wir ein Actionhandler, also die Aktion, wenn er gedrückt wird
+ //FÃ¼r ein Button erstellen wir ein Actionhandler
   
 ////////////////SAVE////////////////////////
   
@@ -69,8 +69,8 @@ public void actionPerformed(ActionEvent event) {
     	int userSelection = obj_C.getUserSelection();
     	JFileChooser fileChooser = obj_C.getJFileChooser();
     	
-		if (userSelection == JFileChooser.APPROVE_OPTION) {					//Will be executed if we save something
-			File fileToSave = fileChooser.getSelectedFile();
+		if (userSelection == JFileChooser.APPROVE_OPTION) {			
+			File fileToSave = fileChooser.getSelectedFile();	//AuswÃ¤hlte Datei eines Users wird gespeichert und dessen Pfad wird im spÃ¤teren Ablauf fÃ¼r die Speicherung genutzt.
 			
 		//
 		//save
@@ -129,7 +129,7 @@ public void actionPerformed(ActionEvent event) {
  
 public void actionPerformed(ActionEvent event) {
  
-    edPane.setText("");	//Wenn ich auf clear drücke muss der Inhalt gelöscht werden
+    edPane.setText("");
  
 	}
  
@@ -148,7 +148,7 @@ public void actionPerformed(ActionEvent event) {
  
   jFrame.setVisible(true);
 
-}	//Das ist Ende vom main
+}	
  
    
 }
