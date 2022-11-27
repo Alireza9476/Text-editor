@@ -42,10 +42,10 @@ public class GUI_Exp extends JFrame {
 		this.Title = Title;
 
 		// content.setLayout(null);
-		content.add(edPane, BorderLayout.NORTH); // sPane durch edPane ersetzt
+		content.add(edPane, BorderLayout.NORTH); 
 		edPane.setEditorKit(new HTMLEditorKit()); // Auf HTMLEditorKit stellen ist machbar, aber bei Default
 													// speichert er es einfach wie in ein Texteditor
-		edPane.setPreferredSize(new Dimension(500, 500)); // Das ist der Textfeld fuer's Schreiben
+		edPane.setPreferredSize(new Dimension(500, 500)); //Bereich für schreiben
 		// edPane.setBorder(new LineBorder(Color.black,1));
 
 		setTitle(this.Title);
@@ -145,13 +145,13 @@ public class GUI_Exp extends JFrame {
 	}
 
 	private void item_look(JMenuItem i1, int width, int height) { // All unsere items haben die gleiche Eigenschaften
-		i1.setPreferredSize(new Dimension(width, height)); // x,y die gr��e des Bereich wo unser Text ist
-		i1.setFont(new Font("Aller", 0, 15)); // 15 ist die Gr��e
+		i1.setPreferredSize(new Dimension(width, height));
+		i1.setFont(new Font("Aller", 0, 15));	//15 -> Groesse, siehe Methodenparameterbeschreibung
 	}
 
 	private void JMenu_look(JMenu i, int width, int height) {
-		i.setPreferredSize(new Dimension(width, height)); // Achtung, nur Labelgr��e
-		i.setFont(new Font("Aller", 0, 15)); // 3.Parameter ist unsere Gr��e
+		i.setPreferredSize(new Dimension(width, height)); // Achtung, nur Labelgroesse
+		i.setFont(new Font("Aller", 0, 15)); 
 	}
 
 }
