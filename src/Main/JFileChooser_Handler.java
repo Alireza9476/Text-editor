@@ -5,7 +5,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class JFileChooser_Handler {
 
-	private int userSelection; // Ich könnte es auch static machen, dann hätte ich direkten Zugriff
+	private int userSelection; // Ich kÃ¶nnte es auch static machen, dann hÃ¤tte ich direkten Zugriff
 	JFileChooser fileChooser = new JFileChooser();
 	public static String AbsolutPath;
 
@@ -29,8 +29,7 @@ public class JFileChooser_Handler {
 		return fileChooser;
 	}
 
-	public void set_Absolut_Path(String AbsolutPath) { // nicht static da ich den Wert this.AbsolutWert static setzte,
-														// da ich ja hier den Wert nur setzte und es nicht nehme
+	public void set_Absolut_Path(String AbsolutPath) {
 		JFileChooser_Handler.AbsolutPath = AbsolutPath;
 	}
 
